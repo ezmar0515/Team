@@ -1,0 +1,18 @@
+name: Team
+version: '1.0-SNAPSHOT'
+main: team.TeamMain
+api-version: '1.21'
+commands :
+  team :
+    description: 팀을 관리
+    usage : /team add <플레이어> <팀명>
+      /team auto <팀명/random>
+      /team color <teamname> <colorname>
+      /team displayname <teamname> <displayname>
+      /team friendlyfire <teamname> <boolean>
+      /team leave <플레이어>
+      /team make <teamname>
+      /team prefix <teamname> <prefix>
+      /team suffix <teamname> <suffix>
+    permission : team.admin
+    permission-message: §c당신은 이 명령어를 사용할 권한이 없습니다.
