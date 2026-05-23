@@ -8,7 +8,7 @@ class TeamMake {
     fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         // 인자 개수 확인 (/team make <teamname>)
         if (args.size < 2) {
-            sender.sendMessage("§c사용법: /team add <팀이름>")
+            sender.sendMessage("§c사용법: /team make <팀이름>")
             return true
         }
 

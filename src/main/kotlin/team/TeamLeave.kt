@@ -8,7 +8,7 @@ class TeamLeave {
     fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         // 인자 개수 확인 (/team leave <player>)
         if (args.size < 2) {
-            sender.sendMessage("§c사용법: /team add <플레이어>")
+            sender.sendMessage("§c사용법: /team leave <플레이어>")
             return true
         }
 

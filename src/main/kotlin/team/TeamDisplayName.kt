@@ -34,7 +34,7 @@ class TeamDisplayName {
         // 3. displayname 추가
         try {
             targetTeam.displayName(Component.text(displayName))
-            sender.sendMessage("§a${teamName} 팀의 접두사가 '${displayName}'(으)로 설정되었습니다.")
+            sender.sendMessage("§a${teamName} 팀의 표시 이름이 '${displayName}'(으)로 설정되었습니다.")
         } catch (e: IllegalStateException) {
             sender.sendMessage("§c오류: 팀이 등록 해제된 상태입니다.")
         }

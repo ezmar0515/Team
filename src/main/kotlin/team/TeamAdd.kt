@@ -31,7 +31,7 @@ class TeamAdd {
 
         // 3. 플레이어에게 팀이 있는 지 확인
         if (board.getEntityTeam(targetPlayer) != null) {
-            sender.sendMessage("§플레이어가 이미 팀이 있습니다. 팀에서 제거하고 다시 시도하십시오.")
+            sender.sendMessage("§c플레이어가 이미 팀이 있습니다. 팀에서 제거하고 다시 시도하십시오.")
             return true
         }
 
@@ -44,8 +44,8 @@ class TeamAdd {
 
         // 5. 팀에 추가
         targetTeam.addEntry(targetPlayer.name)
-        sender.sendMessage("§a${targetPlayer}님을 ${targetTeam}에 추가했습니다.")
-        targetPlayer.sendMessage("§a당신은 이제 ${targetTeam.displayName} 팀 소속입니다.")
+        sender.sendMessage("§a${targetPlayer.name}님을 ${targetTeam.name}에 추가했습니다.")
+        targetPlayer.sendMessage("§a당신은 이제 §f${targetTeam.name}§a 팀 소속입니다.")
 
         return true
     }

@@ -34,7 +34,7 @@ class TeamSuffix {
         // 3. suffix 추가
         try {
             targetTeam.suffix(Component.text(suffix))
-            sender.sendMessage("§a${teamName} 팀의 접두사가 '${suffix}'(으)로 설정되었습니다.")
+            sender.sendMessage("§a${teamName} 팀의 접미사가 '${suffix}'(으)로 설정되었습니다.")
         } catch (e: IllegalStateException) {
             sender.sendMessage("§c오류: 팀이 등록 해제된 상태입니다.")
         }
